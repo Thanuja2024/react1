@@ -1,0 +1,41 @@
+.stateExa{
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 90px;
+    font-family: sans-serif;
+}
+.btn{
+    width: 100%;
+    max-width: 450px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+
+}
+.btn>button{
+    font-size: 18px;
+    font-family: sans-serif;
+    padding: 12px 35px;
+    border: none;
+    background-color: white;
+    color: rgb(red, green, blue);
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+
+}
+.btn>button:hover{
+    background-color: rgb(red, green, blue);
+    color: white;
+    border: 2px solid #fff;
+}

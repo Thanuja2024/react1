@@ -147,19 +147,57 @@ import CBCStateEx from './statesamples/CBCStateEx'
   
   export default App     */
 
-  import React from 'react'
-  // import UseEffectEx from './hooksEx/UseEffectEx'
-  import RefEx from './hooksEx/RefEx'
-// import RefExAudio from './hooksEx/RefEXAudio'
+//   import React from 'react'
+//   // import UseEffectEx from './hooksEx/UseEffectEx'
+//   import RefEx from './hooksEx/RefEx'
+// // import RefExAudio from './hooksEx/RefEXAudio'
   
-  const App = () => {
-    return (
-      <div>App
-        {/* <UseEffectEx/> */}
-        <RefEx/>
-        {/* <RefExAudio/> */}
+//   const App = () => {
+//     return (
+//       <div>App
+//         {/* <UseEffectEx/> */}
+//         <RefEx/>
+//         {/* <RefExAudio/> */}
+//       </div>
+//     )
+//   }
+//   export default App
+
+
+// function App() {
+//   return (
+//       <div style={{ textAlign: 'center', padding: '20px' }}>
+//           <h1>Welcome to My First React App</h1>
+//           <p>This is a simple React application!</p>
+//       </div>
+//   );
+// }
+
+// export default App;
+
+
+
+import React from 'react';
+import Navbar from './components/Navbar';
+import Dashboard from './components/Dashboard';
+import DisasterDetails from './components/DiasterDetails';
+import DisasterList from './components/DisasterList';
+import Footer from './components/Footer';
+
+function App() {
+  return (
+    <div>
+      <Navbar />
+      <Dashboard />
+      <div style={{ display: 'flex', justifyContent: 'space-between', padding: '20px' }}>
+        <DisasterList />
+        <DisasterDetails />
       </div>
-    )
-  }
-  export default App
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
+
 
